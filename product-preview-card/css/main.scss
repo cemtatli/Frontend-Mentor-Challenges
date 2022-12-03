@@ -36,9 +36,8 @@ main {
   .product-images {
     width: 100%;
     height: 100%;
-    display: flex;
     flex: 1;
-    background: url(../images/image-product-desktop.jpg);
+    background-image: url(../images/image-product-desktop.jpg);
   }
   .product-card {
     display: flex;
@@ -104,7 +103,7 @@ main {
           transition: 300ms all ease-in;
         }
         &::before {
-          content: url(./images/icon-cart.svg);
+          content: url(../images/icon-cart.svg);
           width: 15px;
           height: 15px;
           color: #fff;
