@@ -1,6 +1,6 @@
 # Frontend-Mentor-Challenges
 
-| Source          | Live Demo                                            |
+| Title           | Live Demo                                            |
 | --------------- | ---------------------------------------------------- |
 | Single Price    | https://ct-single-price-grid-component.netlify.app/  |
 | Stats Preview   | https://ct-stats-preview-card-component.netlify.app/ |
