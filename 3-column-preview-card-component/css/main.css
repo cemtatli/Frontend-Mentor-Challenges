@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.card-1 {
+  background: hsl(31deg, 77%, 52%);
+}
+.card-1 .button-1 {
+  color: hsl(31deg, 77%, 52%);
+}
+
+.card-2 {
+  background: hsl(184deg, 100%, 22%);
+}
+.card-2 .button-2 {
+  color: hsl(184deg, 100%, 22%);
+}
+
+.card-3 {
+  background: hsl(179deg, 100%, 13%);
+}
+.card-3 .button-3 {
+  color: hsl(179deg, 100%, 13%);
+}
+
+.container {
+  margin: 0 auto;
+  width: 830px;
+}
+.container .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  overflow: hidden;
+}
+.container .card-grid .card {
+  padding: 2.5rem;
+}
+.container .card-grid .card p {
+  color: hsl(0deg, 0%, 95%);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.container .card-grid .card h2 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+.container .card-grid .card .card-button {
+  text-decoration: none;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 1rem 1.25rem;
+  border-radius: 1.5rem;
+  margin-top: 3rem;
+  display: inline-block;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  transition: all 0.3s ease-in-out;
+}
+.container .card-grid .card .card-button:hover {
+  color: hsl(0deg, 0%, 95%);
+  background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+}/*# sourceMappingURL=main.css.map */
