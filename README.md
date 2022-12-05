@@ -8,3 +8,4 @@
 | Order Summary   | https://ct-order-summary-component.netlify.app/      |
 | Qr Code         | https://ct-qr-code-component.netlify.app/            |
 | Product Preview | https://ct-product-preview-card.netlify.app/         |
+| Profile Card    | https://ct-profile-card-component.netlify.app/       |
