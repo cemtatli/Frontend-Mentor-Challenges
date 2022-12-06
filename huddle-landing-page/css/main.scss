@@ -38,7 +38,7 @@ body {
     gap: 1rem;
     .card-image {
       img {
-        width: 450px;
+        width: 325px;
       }
     }
     .card-info {
@@ -97,7 +97,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   body {
     background-image: url(../images/bg-desktop.svg);
   }
