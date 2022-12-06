@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+$color-bg: hsl(257, 40%, 49%);
+$color-pink: hsl(300, 69%, 71%);
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg-mobile.svg);
+  background-size: cover;
+  background-position: top;
+  background-color: $color-bg;
+}
+
+// Styles for content elements
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  .header-logo {
+    width: 150px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .card-image {
+      img {
+        width: 450px;
+      }
+    }
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 1rem;
+      h1 {
+        font-size: 1.75rem;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        width: (65%);
+        margin-bottom: 1.5rem;
+      }
+      button {
+        outline: none;
+        width: 50%;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: none;
+        color: $color-bg;
+        box-shadow: 8px 8px 30px -16px rgba(0, 0, 0, 0.5);
+        &:hover {
+          background: $color-pink;
+          color: white;
+          transition: 0.2s all ease-in;
+        }
+      }
+    }
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    ion-icon {
+      font-size: 1.5rem;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      padding: 0.5rem;
+      &:hover {
+        transition: 0.2s all ease-in;
+        color: $color-pink;
+        border: 1px solid $color-pink;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+  .container {
+    .header-logo {
+      width: 200px;
+    }
+    .card {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      padding: 1rem;
+      .card-image {
+        width: 900px;
+        img {
+          width: 100%;
+        }
+      }
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+        h1 {
+          width: (70%);
+          font-size: 2.75rem;
+          text-align: start;
+        }
+        p {
+          justify-content: flex-start;
+          align-items: flex-start;
+          text-align: start;
+        }
+        button {
+          width: (25%);
+          justify-content: flex-start;
+        }
+      }
+    }
+    .social-icons {
+      width: 90%;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 0.75rem;
+    }
+  }
+}
